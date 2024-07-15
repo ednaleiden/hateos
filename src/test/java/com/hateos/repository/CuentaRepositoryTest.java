@@ -11,7 +11,7 @@ import org.springframework.test.annotation.Rollback;
 
 
 @DataJpaTest
-@Rollback(value = true)
+@Rollback(value = false)
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class CuentaRepositoryTest {
 
