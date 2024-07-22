@@ -4,12 +4,13 @@ package com.hateos.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.hateoas.RepresentationModel;
 
 @Entity
 @Table(name = "cuentas")
 @NoArgsConstructor
 @AllArgsConstructor
-public class cuenta {
+public class cuenta extends RepresentationModel<cuenta> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
